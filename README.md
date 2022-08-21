@@ -1,6 +1,6 @@
 # API y webhook scraping valor Dolar/Euro del BNA
 
-![](https://github.com/leovillar/bna-dolareuro-scraping/actions/workflows/go.yml/badge.svg)
+[![Build Status](https://github.com/leovillar/bna-dolareuro-scraping/actions/workflows/go.yml/badge.svg)](https://github.com/leovillar/bna-dolareuro-scraping/actions)
 
 ## Objetivo:
 El objetivo de este proyecto es obtener el valor del dolar y euro del BNA y disponibilizarlo como REST API en GET /cotizacion y enviarlo a una webhook.
