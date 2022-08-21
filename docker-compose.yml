@@ -1,0 +1,19 @@
+version: '3'
+services:
+  dolar-bna-scraping:
+    container_name: ${CONTAINER_NAME}
+    image: ${IMAGEN_NAME}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      API_SERVER_PORT: ${API_SERVER_PORT}
+      BNA_SCRAPING_DOMAIN: ${BNA_SCRAPING_DOMAIN}
+      BNA_SCRAPING_URL_VISIT: ${BNA_SCRAPING_URL_VISIT}
+      CRON_NOTIFICATION_ENABLED: ${CRON_NOTIFICATION_ENABLED}
+      CRON_NOTIFICATION: ${CRON_NOTIFICATION}
+      WEBHOOK_ENDPOINT: ${WEBHOOK_ENDPOINT}
+    restart: always
+    network_mode: "host"
+    dns:
+      - 8.8.8.8
