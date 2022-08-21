@@ -55,5 +55,5 @@ docker-compose pull
 docker-compose up -d
 ```
 
-### Funciona perfectamente bajo entornos linux, no lo probado en windows, pero estimo que no habría problemas.
+### Funciona perfectamente bajo entornos linux, no lo he probado en windows, pero estimo que no habría problemas.
 
