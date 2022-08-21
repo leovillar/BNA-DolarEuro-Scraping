@@ -46,8 +46,12 @@ Modificar según conveniencia el archivo .env, puerto donde corre la API, habili
    WEBHOOK_ENDPOINT=http://localhost:8000
 ```
 
-Luego de modificar el archivo .env, ejecutar el siguiente comando:
+Luego de modificar el archivo .env, ejecutar los siguientes comando, `docker-compose pull` para bajar la imagen de DockerHub 
+que para este momento que estoy escribiendo el readme la imagen y tag es `leovillar/bna-dolareuro-scraping:0.1.1` y luego 
+`docker-compose up -d` para iniciar el servicio.
+
 ```
+docker-compose pull
 docker-compose up -d
 ```
 
